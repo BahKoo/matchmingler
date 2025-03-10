@@ -1,0 +1,42 @@
+#header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 21px;
+}
+
+#title {
+    position: absolute;
+    color:#F3E680;
+    font-family: 'Hachi Maru Pop', serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.5rem;
+    left: 35%;
+    top: 25%;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+}
+
+@media (min-width:576px) {
+    #title {
+        font-size: 2rem;
+    }
+  }
+  @media (min-width:768px) {
+    #title {
+        font-size: 2.5rem;
+    }
+  }
+  @media (min-width:1024px) {
+    #title {
+        font-size: 3rem;
+    }
+  }
+  @media (min-width:1280px) {
+    #title {
+        font-size: 4rem;
+    }
+  }
