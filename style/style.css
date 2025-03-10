@@ -12,31 +12,35 @@
     font-family: 'Hachi Maru Pop', serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 1.5rem;
-    left: 35%;
-    top: 25%;
+    font-size: 2rem;
+    left: 36%;
+    top: 0;
     bottom: 0;
     right: 0;
     margin: 0;
+    line-height: 1em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
 }
 
 @media (min-width:576px) {
     #title {
-        font-size: 2rem;
+        font-size: 3rem;
     }
   }
   @media (min-width:768px) {
     #title {
-        font-size: 2.5rem;
+        font-size: 4rem;
     }
   }
   @media (min-width:1024px) {
     #title {
-        font-size: 3rem;
+        font-size: 5rem;
     }
   }
   @media (min-width:1280px) {
     #title {
-        font-size: 4rem;
+        font-size: 6rem;
     }
   }
