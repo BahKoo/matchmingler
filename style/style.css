@@ -109,14 +109,17 @@ nav {
 }
 
 .brand {
-  color: #9c5900;
+  color: #ff8c04;
+  font-size: 1.125rem;
   font-family: "Hachi Maru Pop", serif;
   font-weight: bold;
 }
 
 nav a {
   float: left;
-  padding: 16px 16px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 16px;
   text-decoration: none;
 }
 
