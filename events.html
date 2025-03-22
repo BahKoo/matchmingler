@@ -15,6 +15,36 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <title>Events | Match Mingler</title>
+    <style>
+      table {
+          display: block;
+          overflow-x: auto;
+        }
+        table tbody {
+          display: table;
+          width: 100%;
+        }    
+
+      .narrow {
+        display: none;
+      }
+
+      @media screen and (max-width: 768px) {
+        .narrow {
+          display: revert;
+          white-space: nowrap;
+        }
+        .wide {
+          display: none;
+        }
+        th, td {
+          padding: calc(var(--pico-spacing)/2) calc(var(--pico-spacing)/2);
+        }
+      }
+      [data-tooltip]:not(a, button, input) {
+        border-bottom: unset;
+      }
+    </style>
   </head>
   <body>
 
@@ -37,52 +67,101 @@
       <h1>Events</h1>
       <table>
         <tr>
-          <th>Location</th>
-          <th>Date</th>
+          <th class="narrow">Date</th>
+          <th class="wide">Location</th>
+          <th class="wide">Date</th>
           <th>Type</th>
           <th>Status</th>
         </tr>
         <tr class="completed">
-          <td>Winnipeg</td>
-          <td>2024 - August</td>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div>2024 - August</div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide">2024 - August</td>
           <td>Singles Mingle</td>
           <td>Completed</td>
         </tr>
         <tr class="completed">
-          <td>Winnipeg</td>
-          <td>2024 - October</td>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div>2024 - October</div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide">2024 - October</td>
           <td>Singles Mingle</td>
           <td>Completed</td>
         </tr>
         <tr class="completed">
-          <td>Winnipeg</td>
-          <td>2024 - November</td>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div>2024 - November</div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide">2024 - November</td>
           <td>Singles Mingle</td>
           <td>Completed</td>
         </tr>
         <tr class="completed">
-          <td>Winnipeg</td>
-          <td>2025 - February</td>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div>2025 - February</div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide">2025 - February</td>
           <td>Singles Mingle</td>
           <td>Completed</td>
         </tr>
         <tr class="completed">
-          <td>Winnipeg</td>
-          <td>2025 - March</td>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div>2025 - March</div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide">2025 - March</td>
           <td>Singles Mingle</td>
           <td>Completed</td>
         </tr>
         <tr>
-          <td>Winnipeg</td>
-          <td>2025 - April</td>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div>2025 - April</div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide">2025 - April</td>
           <td><a href="singles-mingle.html">Singles Mingle</a></td>
           <td class="sold-out">Sold Out!</td>
         </tr>
         <tr>
-          <td>Winnipeg</td>
-          <td>2025 - May</td>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div data-tooltip="8:30 am to 12:30 pm">2025 - May 3rd</div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide"><span data-tooltip="8:30 am to 12:30 pm">2025 - May 3</span></td>
           <td><a href="classic-bracket.html">Classic Bracket</a></td>
-          <td class="future">Planning Stage</td>
+          <td class="future">Invitations Open!</td>
+        </tr>
+        <tr>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div data-tooltip="8am to Noon">2025 - May 17th</div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide"><span data-tooltip="8am to Noon">2025 - May 17</span></td>
+          <td><a href="classic-bracket.html">Classic Bracket</a></td>
+          <td class="future">Invitations Open!</td>
+        </tr>
+        <tr>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div data-tooltip="Noon to 4pm">2025 - May 17th</div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide"><span  data-tooltip="Noon to 4pm">2025 - May 17</span></td>
+          <td><a href="awesome-twosome.html">Awesome Twosome</a></td>
+          <td class="future">Invitations Open!</td>
         </tr>
       </table>
 
