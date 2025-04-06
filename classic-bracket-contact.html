@@ -61,17 +61,29 @@
         <input type="checkbox" name="botcheck">
         <fieldset>
           <label>
-            Email
-            <input type="email" name="Email" autocomplete="email" required>
-          </label>
-          <label>
             Name
             <input name="Name" autocomplete="name">
           </label>
           <label>
+            Email
+            <input type="email" name="Email" autocomplete="email" required>
+          </label>
+          <label>
+            Phone Number (optional)
+            <input name="Phone Number" autocomplete="mobile">
+          </label>
+          <label>
             Partner's Name
             <input name="Partner's Name">
-          </label>         
+          </label> 
+          <label>
+            Partner's Email
+            <input type="email" name="Email"  required>
+          </label>
+          <label>
+            Partner's Phone Number (optional)
+            <input name="Phone Number">
+          </label>
           <label>
             Category
             <select name="Category" aria-label="Select your category...">
@@ -109,21 +121,6 @@
               <option>I need help deciding!</option>
             </select>
           </label>
-          <fieldset>
-            <legend>Events:</legend>
-            <label>
-              <input type="checkbox" name="May 3 (8:30 am - 12:30 pm)" />
-              May 3 (8:30 am - 12:30 pm)
-            </label>
-            <label>
-              <input type="checkbox" name="May 17 (8:00 am - noon)" />
-              May 17 (8:00 am - noon)
-            </label>
-            <label>
-              <input type="checkbox" name="Future Events" />
-              Future Events
-            </label>
-          </fieldset> 
           <label>
             Comments
             <textarea name="Comments"></textarea>
