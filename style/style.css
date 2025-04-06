@@ -246,3 +246,15 @@ input[name="botcheck"] {
 .namevalue div:nth-child(even) {
   color:var(--pico-muted-color);
 }
+
+.info td:nth-child(1) {
+  white-space: nowrap;
+}
+
+.info td:nth-child(2) {
+  width: 100%;
+}
+
+.info small {
+  color: var(--pico-muted-color);
+}
