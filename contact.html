@@ -21,9 +21,13 @@
         document.getElementById("submit").setAttribute("aria-busy", "true");
         document.getElementById("submit").innerText = "Please wait…";
       }
-      window.onload = function() {
+      function resetForm() {
         document.getElementById("form").reset();
+        document.getElementById("submit").removeAttribute("disabled");
+        document.getElementById("submit").removeAttribute("aria-busy");
+        document.getElementById("submit").innerText = "Send";
       };
+      window.addEventListener("pageshow", resetForm);
     </script>    
   </head>
   <body>
