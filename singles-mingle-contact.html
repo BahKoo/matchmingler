@@ -21,6 +21,9 @@
         document.getElementById("submit").setAttribute("aria-busy", "true");
         document.getElementById("submit").innerText = "Please wait…";
       }
+      window.onload = function() {
+        document.getElementById("form").reset();
+      };
     </script>   
   </head>
   <body>
@@ -52,7 +55,7 @@
         </p>
       </div>
 
-      <form action="https://api.web3forms.com/submit" method="POST" onsubmit="disableForm()">
+      <form id="form" action="https://api.web3forms.com/submit" method="POST" onsubmit="disableForm()">
         <input type="hidden" name="access_key" value="8aa15eae-c309-4d5f-a518-fc8c8140c403">
         <input type="hidden" name="subject" value="Match Mingler - Singles Mingle">
         <input type="hidden" name="redirect" value="https://matchmingler.com/thanks.html">

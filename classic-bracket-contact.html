@@ -21,6 +21,9 @@
         document.getElementById("submit").setAttribute("aria-busy", "true");
         document.getElementById("submit").innerText = "Please wait…";
       }
+      window.onload = function() {
+        document.getElementById("form").reset();
+      };
     </script>   
   </head>
   <body>
@@ -54,7 +57,7 @@
 
       <hr />
 
-      <form action="https://api.web3forms.com/submit" method="POST" onsubmit="disableForm()">
+      <form id="form" action="https://api.web3forms.com/submit" method="POST" onsubmit="disableForm()">
         <input type="hidden" name="access_key" value="8aa15eae-c309-4d5f-a518-fc8c8140c403">
         <input type="hidden" name="subject" value="Match Mingler - Classic Bracket">
         <input type="hidden" name="redirect" value="https://matchmingler.com/thanks.html">
@@ -74,11 +77,11 @@
           </label>
           <label>
             Partner's Name
-            <input name="Partner's Name">
+            <input name="Partner's Name" required>
           </label> 
           <label>
             Partner's Email
-            <input type="email" name="Partner's Email"  required>
+            <input type="email" name="Partner's Email">
           </label>
           <label>
             Partner's Phone Number (optional)
