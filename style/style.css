@@ -49,6 +49,12 @@ textarea {
     url("../img/bg3.png");
 }
 
+.bg4 {
+  background:
+    linear-gradient(rgb(19, 23, 31, 0.7), rgb(19, 23, 31, 0.7)),
+    url("../img/bg4.png");
+}
+
 .events {
   display: grid;
   grid-template-columns: 1fr 1fr;
