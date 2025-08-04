@@ -1,3 +1,15 @@
+
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1
+}
+
 /* https://stackoverflow.com/questions/71731966/preventing-edge-from-showing-the-visual-search-icon-when-users-hover-over-an-ima */
 img {
   pointer-events: none;
@@ -292,4 +304,68 @@ input[name="botcheck"] {
   width:200px;
   margin: 30px 0;
   display: block;
+}
+
+.footer-section {
+  margin-top: 2rem;
+  background-color: #181C25;
+}
+
+footer {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+.footer-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-columns > div h6 {
+  margin-bottom: 0.5rem;
+}
+
+.footer-columns ul {
+  padding-left: 0;
+}
+
+.footer-columns ul li {
+  list-style: none;
+}
+
+.footer-columns ul li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.footer-columns a {
+  text-decoration: none;
+  color: var(--pico-muted-color);
+}
+
+.footer-columns a:hover,
+.footer-columns a:focus {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--muted-color, #666);
+}
+
+@media (min-width: 768px) {
+  .footer-columns {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .footer-columns > div {
+    flex: 1;
+  }
 }
