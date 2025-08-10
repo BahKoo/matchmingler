@@ -333,10 +333,7 @@ footer {
 
 .footer-columns ul li {
   list-style: none;
-}
-
-.footer-columns ul li a {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 0.4em;
 }
