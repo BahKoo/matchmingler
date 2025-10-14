@@ -40,6 +40,13 @@
         th, td {
           padding: calc(var(--pico-spacing)/2) calc(var(--pico-spacing)/2);
         }
+        .dash {
+          display: none;
+        }
+        .cell {
+          display: flex;
+          flex-direction: column;
+        }
       }
       [data-tooltip]:not(a, button, input) {
         border-bottom: unset;
@@ -86,8 +93,14 @@
           </td>
           <td class="wide">Winnipeg</td>
           <td class="wide"><span><a href="event-2025-11-01b.html">November 1st</a></span></td>
-          <td>Classic Bracket - Mixed 3.0</td>
-          <td class="sold-out">Full</td>
+          <td>
+            <div class="cell">
+              <span>Classic Bracket</span>
+              <span class="dash">-</span>
+              <span>Mixed 3.0</span>
+            </div>
+          </td>
+          <td class="sold-out">Waitlist</td>
         </tr>
         <tr>
           <td class="narrow">
@@ -96,8 +109,14 @@
           </td>
           <td class="wide">Niverville</td>
           <td class="wide"><span><a href="event-2025-11-08.html">November 8th</a></span></td>
-          <td>Fab4Frenzy - Level 3.75 - 4.25</td>
-          <td class="sold-out">Full</td>
+          <td>
+            <div class="cell">
+              <span>Fab4Frenzy</span>
+              <span class="dash">-</span>
+              <span>Level 3.75 - 4.25</span>
+            </div>
+          </td>
+          <td class="sold-out">Waitlist</td>
         </tr>
         <tr>
           <td class="narrow">
@@ -106,7 +125,13 @@
           </td>
           <td class="wide">Winnipeg</td>
           <td class="wide"><span><a href="event-2025-11-29a.html">November 29th</a></span></td>
-          <td>Classic Bracket - Men 3.5</td>
+          <td>
+            <div class="cell">
+              <span>Classic Bracket</span>
+              <span class="dash">-</span>
+              <span>Men 3.5</span>
+            </div>
+          </td>
           <td class="future">Available</td>
         </tr>
         <tr>
@@ -116,8 +141,14 @@
           </td>
           <td class="wide">Winnipeg</td>
           <td class="wide"><span><a href="event-2025-11-29b.html">November 29th</a></span></td>
-          <td>Classic Bracket - Women 3.5</td>
-          <td class="sold-out">Full</td>
+          <td>
+            <div class="cell">
+              <span>Classic Bracket</span>
+              <span class="dash">-</span>
+              <span>Women 3.5</span>
+            </div>
+          </td>
+          <td class="sold-out">Waitlist</td>
         </tr>
         <tr>
           <td class="narrow">
@@ -126,8 +157,14 @@
           </td>
           <td class="wide">Winnipeg</td>
           <td class="wide"><span><a href="event-2026-01-03.html">January 3rd</a></span></td>
-          <td>Classic Bracket - Mixed 3.0</td>
-          <td class="future">Available</td>
+          <td>
+            <div class="cell">
+              <span>Classic Bracket</span>
+              <span class="dash">-</span>
+              <span>Mixed 3.0</span>
+            </div>
+          </td>
+          <td class="sold-out">Waitlist</td>
         </tr>
         <tr>
           <td class="narrow">
@@ -136,8 +173,14 @@
           </td>
           <td class="wide">Winnipeg</td>
           <td class="wide"><span><a href="event-2026-01-10.html">January 10th</a></span></td>
-          <td>Fab4Frenzy - Level 2.5</td>
-          <td class="future">Available</td>
+          <td>
+            <div class="cell">
+              <span>Fab4Frenzy</span>
+              <span class="dash">-</span>
+              <span>Level 2.5</span>
+            </div>
+          </td>
+          <td class="sold-out">Waitlist</td>
         </tr>
         <tr>
           <td class="narrow">
@@ -146,8 +189,14 @@
           </td>
           <td class="wide">Winnipeg</td>
           <td class="wide"><span><a href="event-2026-01-17.html">January 17th</a></span></td>
-          <td>Fab4Frenzy - Level 3.0</td>
-          <td class="future">Available</td>
+          <td>
+            <div class="cell">
+              <span>Fab4Frenzy</span>
+              <span class="dash">-</span>
+              <span>Level 3.0</span>
+            </div>
+          </td>
+          <td class="sold-out">Waitlist</td>
         </tr>
         <tr>
           <td class="narrow">
@@ -157,7 +206,7 @@
           <td class="wide">Winnipeg</td>
           <td class="wide"><span><a href="event-2026-02-14.html">February 14th</a></span></td>
           <td>Singles Mingle</td>
-          <td class="future">Available</td>
+          <td class="sold-out">Waitlist</td>
         </tr>
         <tr>
           <td class="narrow">
@@ -166,8 +215,14 @@
           </td>
           <td class="wide">Winnipeg</td>
           <td class="wide"><span><a href="event-2026-02-21.html">February 21st</a></span></td>
-          <td>Fab4Frenzy - Level 3.5</td>
-          <td class="future">Available</td>
+          <td>
+            <div class="cell">
+              <span>Fab4Frenzy</span>
+              <span class="dash">-</span>
+              <span>Level 3.5</span>
+            </div>
+          </td>
+          <td class="sold-out">Waitlist</td>
         </tr>
         <tr>
           <td class="narrow">
@@ -176,7 +231,13 @@
           </td>
           <td class="wide">Winnipeg</td>
           <td class="wide"><span><a href="event-2026-02-28.html">February 28th</a></span></td>
-          <td>Classic Bracket - Mixed 3.5</td>
+          <td>
+            <div class="cell">
+              <span>Classic Bracket</span>
+              <span class="dash">-</span>
+              <span>Mixed 3.5</span>
+            </div>
+          </td>
           <td class="future">Available</td>
         </tr>
         <tr>
@@ -186,7 +247,13 @@
           </td>
           <td class="wide">Winnipeg</td>
           <td class="wide"><span><a href="event-2026-03-07.html">March 7th</a></span></td>
-          <td>Classic Bracket - Mixed 2.5</td>
+          <td>
+            <div class="cell">
+              <span>Classic Bracket</span>
+              <span class="dash">-</span>
+              <span>Mixed 2.5</span>
+            </div>
+          </td>
           <td class="future">Available</td>
         </tr>
         <tr>
@@ -196,7 +263,13 @@
           </td>
           <td class="wide">Winnipeg</td>
           <td class="wide"><span><a href="event-2026-03-14.html">March 14th</a></span></td>
-          <td>Fab4Frenzy - Level 3.0</td>
+          <td>
+            <div class="cell">
+              <span>Fab4Frenzy</span>
+              <span class="dash">-</span>
+              <span>Level 3.0</span>
+            </div>
+          </td>
           <td class="future">Available</td>
         </tr>
         <tr>
@@ -206,7 +279,13 @@
           </td>
           <td class="wide">Winnipeg</td>
           <td class="wide"><span><a href="event-2026-03-21.html">March 21st</a></span></td>
-          <td>Fab4Frenzy - Level 3.5</td>
+          <td>
+            <div class="cell">
+              <span>Fab4Frenzy</span>
+              <span class="dash">-</span>
+              <span>Level 3.5</span>
+            </div>
+          </td>
           <td class="future">Available</td>
         </tr>
         <tr>
@@ -216,7 +295,13 @@
           </td>
           <td class="wide">Winnipeg</td>
           <td class="wide"><span><a href="event-2026-03-28.html">March 28th</a></span></td>
-          <td>Fab4Frenzy - Level 2.5</td>
+          <td>
+            <div class="cell">
+              <span>Fab4Frenzy</span>
+              <span class="dash">-</span>
+              <span>Level 2.5</span>
+            </div>
+          </td>
           <td class="future">Available</td>
         </tr>
       </table>
