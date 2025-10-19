@@ -67,6 +67,12 @@ textarea {
     url("../img/bg4.png");
 }
 
+.bg5 {
+  background:
+    linear-gradient(rgb(19, 23, 31, 0.7), rgb(19, 23, 31, 0.7)),
+    url("../img/bg5.png");
+}
+
 .events {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -269,11 +275,15 @@ input[name="botcheck"] {
   font-weight: lighter;
 }
 
-.future {
+.available {
   color: var(--pico-ins-color);
 }
 
-.sold-out {
+.waitlist {
+  color: rgb(191, 167, 108)
+}
+
+.full {
   color: var(--pico-del-color);
 }
 
