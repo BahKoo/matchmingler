@@ -73,6 +73,12 @@ textarea {
     url("../img/bg5.png");
 }
 
+.bg6 {
+  background:
+    linear-gradient(rgb(19, 23, 31, 0.7), rgb(19, 23, 31, 0.7)),
+    url("../img/bg6.png");
+}
+
 .events {
   display: grid;
   grid-template-columns: 1fr 1fr;
