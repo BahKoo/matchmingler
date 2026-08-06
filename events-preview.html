@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style/pico-custom.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" />
+    <script type="text/javascript" src="script/script.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Events | Match Mingler</title>
+    <style>
+      table {
+          display: block;
+          overflow-x: auto;
+        }
+        table tbody {
+          display: table;
+          width: 100%;
+        }    
+
+      .narrow {
+        display: none;
+      }
+
+      @media screen and (max-width: 768px) {
+        .narrow {
+          display: revert;
+          white-space: nowrap;
+        }
+        .wide {
+          display: none;
+        }
+        th, td {
+          padding: calc(var(--pico-spacing)/2) calc(var(--pico-spacing)/2);
+        }
+        .dash {
+          display: none;
+        }
+        .cell {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      [data-tooltip]:not(a, button, input) {
+        border-bottom: unset;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav>
+      <a href="index.html" class="brand">Match Mingler</a>
+      <a href="events.html" class="contrast"><small>Events</small></a>
+      <a href="community.html" class="contrast"><small>Community</small></a>
+      <a href="about.html" class="contrast"><small>About</small></a>
+      <a href="contact.html" class="contrast"><small>Contact</small></a>
+      <a href="javascript:void(0);" class="contrast menu" onclick="toggleMenu()">
+        <svg width="14" height="16">
+          <path d="M0,1 14,1" stroke="currentColor" stroke-width="2"/>
+          <path d="M0,6 14,6" stroke="currentColor" stroke-width="2"/>
+          <path d="M0,11 14,11" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </a>
+    </nav>
+
+    <main class="container">
+
+      <h1>Events</h1>
+      <h3>Upcoming Events</h3>
+      
+      <table>
+        <tr>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div><a href="event-2026-08-29a.html">August 29th</a></div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide"><span><a href="event-2026-08-29a.html">August 29th</a></span></td>
+          <td>
+            <div class="cell">
+              <span>Dunno Duo</span>
+              <span class="dash">-</span>
+              <span>Women 3.0</span>
+            </div>
+          </td>
+          <td class="available">Available</td>
+        </tr>
+        <tr>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div><a href="event-2026-08-29b.html">August 29th</a></div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide"><span><a href="event-2026-08-29b.html">August 29th</a></span></td>
+          <td>
+            <div class="cell">
+              <span>Dunno Duo</span>
+              <span class="dash">-</span>
+              <span>Women 2.5</span>
+            </div>
+          </td>
+          <td class="available">Available</td>
+        </tr>
+        <tr>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div><a href="event-2026-09-02.html">September 2nd</a></div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide"><span><a href="event-2026-09-02.html">September 2nd</a></span></td>
+          <td>Singles Mingle</td>
+          <td class="waitlist">Waitlist</td>
+        </tr>
+        <tr>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div><a href="event-2026-09-16a.html">September 16th</a></div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide"><span><a href="event-2026-09-16a.html">September 16th</a></span></td>
+          <td>
+            <div class="cell">
+              <span>Classic Bracket</span>
+              <span class="dash">-</span>
+              <span>Women 3.0</span>
+            </div>
+          </td>
+          <td class="available">Available</td>
+        </tr>
+        <tr>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div><a href="event-2026-09-16b.html">September 16th</a></div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide"><span><a href="event-2026-09-16b.html">September 16th</a></span></td>
+          <td>
+            <div class="cell">
+              <span>Classic Bracket</span>
+              <span class="dash">-</span>
+              <span>Men 3.0</span>
+            </div>
+          </td>
+          <td class="available">Available</td>
+        </tr>
+        <tr>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div><a href="event-2026-09-30.html">September 30th</a></div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide"><span><a href="event-2026-09-30.html">September 30th</a></span></td>
+          <td>
+            <div class="cell">
+              <span>Classic Bracket</span>
+              <span class="dash">-</span>
+              <span>Mixed 3.75+</span>
+            </div>
+          </td>
+          <td class="available">Available</td>
+        </tr>
+        <tr>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div><a href="event-2026-10-14.html">October 14th</a></div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide"><span><a href="event-2026-10-14.html">October 14th</a></span></td>
+          <td>
+            <div class="cell">
+              <span>Dunno Duo</span>
+              <span class="dash">-</span>
+              <span>Men 3.25</span>
+            </div>
+          </td>
+          <td class="available">Available</td>
+        </tr>
+        <tr>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div><a href="event-2026-10-22a.html">October 22nd</a></div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide"><span><a href="event-2026-10-22a.html">October 22nd</a></span></td>
+          <td>
+            <div class="cell">
+              <span>Classic Bracket</span>
+              <span class="dash">-</span>
+              <span>Men 3.25 (120+)</span>
+            </div>
+          </td>
+          <td class="available">Available</td>
+        </tr>
+        <tr>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div><a href="event-2026-10-22b.html">October 22nd</a></div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide"><span><a href="event-2026-10-22b.html">October 22nd</a></span></td>
+          <td>
+            <div class="cell">
+              <span>Classic Bracket</span>
+              <span class="dash">-</span>
+              <span>Women 3.25 (120+)</span>
+            </div>
+          </td>
+          <td class="available">Available</td>
+        </tr>
+        <tr>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div><a href="event-2026-11-11.html">November 11th</a></div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide"><span><a href="event-2026-11-11.html">November 11th</a></span></td>
+          <td>
+            <div class="cell">
+              <span>Dunno Duo</span>
+              <span class="dash">-</span>
+              <span>Women 3.25</span>
+            </div>
+          </td>
+          <td class="available">Available</td>
+        </tr>
+        <tr>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div><a href="event-2026-11-19a.html">November 19th</a></div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide"><span><a href="event-2026-11-19a.html">November 19th</a></span></td>
+          <td>
+            <div class="cell">
+              <span>Classic Bracket</span>
+              <span class="dash">-</span>
+              <span>Men 3.0 (130+)</span>
+            </div>
+          </td>
+          <td class="available">Available</td>
+        </tr>
+        <tr>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div><a href="event-2026-11-19b.html">November 19th</a></div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide"><span><a href="event-2026-11-19b.html">November 19th</a></span></td>
+          <td>
+            <div class="cell">
+              <span>Classic Bracket</span>
+              <span class="dash">-</span>
+              <span>Women 3.0 (130+)</span>
+            </div>
+          </td>
+          <td class="available">Available</td>
+        </tr>
+        <tr>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div><a href="event-2026-11-25.html">November 25th</a></div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide"><span><a href="event-2026-11-25.html">November 25th</a></span></td>
+          <td>
+            <div class="cell">
+              <span>Classic Bracket</span>
+              <span class="dash">-</span>
+              <span>Mixed 2.5</span>
+            </div>
+          </td>
+          <td class="available">Available</td>
+        </tr>
+        <tr>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div><a href="event-2026-12-19.html">December 19th</a></div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide"><span><a href="event-2026-12-19.html">December 19th</a></span></td>
+          <td>To Be Determined</td>
+          <td>TBD</td>
+        </tr>
+        <tr>
+          <td class="narrow">
+            <div>Winnipeg</div>
+            <div><a href="event-2026-12-20.html">December 20th</a></div>
+          </td>
+          <td class="wide">Winnipeg</td>
+          <td class="wide"><span><a href="event-2026-12-20.html">December 20th</a></span></td>
+          <td>To Be Determined</td>
+          <td>TBD</td>
+        </tr>
+      </table>
+
+      <p><small>Please note: Events may be cancelled or postponed based on demand.</small></p>
+
+      <h3>Event Request</h3>
+      <p>Fill the <a href="event-request.html">Event Request</a> form if you don't see an upcoming event that suits your interest!</p>
+
+    </main>
+
+    <div class="footer-section">
+      <footer class="container">
+        <div class="footer-columns">
+          <div>
+            <h6>Match Mingler</h6>
+            <ul>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="singles-mingle.html">Singles Mingle</a></li>
+              <li><a href="awesome-twosome.html">Awesome Twosome</a></li>
+              <li><a href="classic-bracket.html">Classic Bracket</a></li>
+              <li><a href="fab4frenzy.html">Fab4Frenzy</a></li>
+              <li><a href="fab4frenzy-mystery.html">Mystery Fab4Frenzy</a></li>
+              <li><a href="dunno-duo.html">Dunno Duo</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6>Community</h6>
+            <ul>
+              <li><a href="player-profiles.html">Player Profiles</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li>
+                Find us on:
+                <a href="https://www.facebook.com/61577051306392/photos/" target="_blank">
+                  <img src="img/facebook.svg" alt="Facebook" width="22">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h6>Company</h6>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <small>&copy; 2025 Match Mingler. All rights reserved.</small>
+        </div>
+      </footer>
+    </div>
+    
+  </body>
+</html>
